@@ -1,1 +1,1 @@
-# aspect-term-polarity-classificationnalysis
+# Aspect-Term Polarity Classification in Sentiment Analysis
