@@ -1,0 +1,12 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch=2.1.2
+  - transformers=4.34.1
+  - tokenizers=0.14.1
+  - datasets=2.14.5
+  - scikit-learn=1.2.1
+  - numpy=1.26.0
+  - pandas=2.1.1
