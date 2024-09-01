@@ -8,6 +8,7 @@ from torch.utils.data import DataLoader
 
 from atae_lstm import ATAE_LSTM_Dataset, ATAE_LSTM_Model
 from bilstm_attention import BiLSTM_Attention_Dataset, BiLSTM_Attention_Model
+from glove_embedding import setup_glove
 from preprocess import load_glove_embeddings
 from tdlstm import TD_LSTM_Dataset, TD_LSTM_Model
 
@@ -18,8 +19,8 @@ class Classifier:
         self.glove_file_path = "glove.6B.300d.txt"
         self.max_len = 50
 
-        glove_file_path = self.glove_file_path
-        self.word_to_idx, embedding_matrix = load_glove_embeddings(glove_file_path)
+        setup_glove(self.glove_file_path)
+        self.word_to_idx, embedding_matrix = load_glove_embeddings(self.glove_file_path)
 
         # Dataset
         # self.dataset = TD_LSTM_Dataset
@@ -237,4 +238,44 @@ class Classifier:
                 all_preds.extend(preds.cpu().numpy())
 
         polarity_mapping = {0: "negative", 1: "neutral", 2: "positive"}
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
+        return [polarity_mapping[p] for p in all_preds]
         return [polarity_mapping[p] for p in all_preds]
